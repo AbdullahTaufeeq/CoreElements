@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    transition: background-color 0.6s ease;
+}
+
+/* <!-- --------------------------------HEADER-------------------------------- --> */
+
+header{
+    text-align: center;
+    /* border: 1px solid red; */
+    padding: 50px;          
+    /* background-color: #111822; */
+    background-color: #0e1735; 
+    color: #fff9ec;
+    font-size: x-large;
+    font-family: "Funnel Display", sans-serif !important;
+
+}
+
+/* <!-- --------------------------------SEARCH-------------------------------- --> */
+
+.srh{
+    width: 330px;
+    scale: 1.6;
+}
+
+.search{
+    /* border: 1px solid red; */
+    display: flex;
+    position: absolute;
+    margin-left: 140px;
+    margin-top: 30px;
+    padding: 10px;
+    z-index: -2;
+}
+
+.srh-btn{
+    scale: 1.6;
+    margin-left: 110px;
+    border: none;
+}
+
+.req-sub-a{
+    color: #0066cc;
+}
+
+/* --------------------------------------TOGGLE------------------------------------ */
+
+:root {
+    --background: #ffffff;
+    --text: #333333;
+    --accent: #0066cc;
+    --card-bg: #f5f5f5;
+    --transition: all 0.5s ease;
+}
+
+[data-theme="dark"] {
+    --background: #1a1a1a;
+    --text: #ffffff;
+    --accent: #4da8ff;
+    --card-bg: #2d2d2d;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    transition: var(--transition);
+    min-height: 100vh;
+}
+
+.toggle-container {
+    position: relative;
+    z-index: 22222;
+    margin-top: 30px;
+    margin-left: 1200px;
+}
+
+.toggle-btn {
+    position: relative;
+    width: 60px;
+    height: 30px;
+    background: var(--card-bg);
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: var(--transition);
+}
+
+.toggle-slider {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background: var(--accent);
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: var(--transition);
+}
+
+.toggle-btn.active .toggle-slider {
+    transform: translateX(30px);
+}
+
+.card {
+    background: var(--card-bg);
+    border-radius: 8px;
+    transition: var(--transition);
+}
+
+h1 {
+    transition: var(--transition);
+}
+
+/* <!-- --------------------------------CARDS-------------------------------- --> */
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card {
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+    filter: brightness(1);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px #6d8ec5;
+    filter: brightness(1.3); 
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title, a {
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="card-page.css">
+    <title>Card-2</title>
+</head>
+<body>
+
+    <div class="image-container">
+        <img class="image" src="Color_icon_gray_v2.svg.webp" alt="">
+        <div>
+            <h1 class="title">Title</h1>
+            <p class="description">Add your description here</p>
+        </div>
+    </div>
+
+    <div class="code-container">
+        <div class="code-section">
+            <h2>HTML</h2>
+            <pre class="code-block" id="html-code">
+                <!-- Paste your HTML code here, replace < with < and > with > -->
+            </pre>
+            <button onclick="copyCode('html-code')">Copy</button>
+        </div>
+        <div class="code-section">
+            <h2>CSS</h2>
+            <pre class="code-block" id="css-code">
+                <!-- Paste your CSS code here -->
+            </pre>
+            <button onclick="copyCode('css-code')">Copy</button>
+        </div>
+        <div class="code-section">
+            <h2>JS</h2>
+            <pre class="code-block" id="js-code">
+                <!-- Paste your JS code here -->
+            </pre>
+            <button onclick="copyCode('js-code')">Copy</button>
+        </div>
+    </div>
+
+    <script>
+        function copyCode(id) {
+            const code = document.getElementById(id).innerText;
+            navigator.clipboard.writeText(code);
+            alert("Code copied!");
+        }
+    </script>
+
+</body>
+</html>
